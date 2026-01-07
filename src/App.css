@@ -7,6 +7,44 @@
   pointer-events: none;
 }
 
+.toolbar{
+  display: flex;
+  gap: 5px;
+}
+
+.toolbar li{
+  border: 2px solid;
+  list-style: none;
+  padding: 5px;
+} 
+  
+.toolbar li:hover{
+  cursor: pointer;  
+}
+
+.toolbar li.selected{
+  background-color: black;
+  color: white; 
+}
+
+
+.projects{
+ /*display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;*/
+ 
+    column-count: 3; /* Три колонки */
+  column-gap: 10px;
+}
+
+.projects img{
+    width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px; /* Отступ между картинками в одной колонке */
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
